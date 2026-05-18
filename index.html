@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to your Linktree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Logo 區塊 -->
+        <header class="logo-area">
+            <!-- 這裡不引用外部網址，改用 SVG 或文字型態的 Logo -->
+            <h1 class="logo-text">Linktree<span>.</span></h1>
+        </header>
+
+        <!-- 主表單區塊 -->
+        <main class="form-area">
+            <h2>Welcome back!</h2>
+            <p class="subtitle">Log in to your Linktree.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Email or username" required>
+                    <span class="error-msg" id="usernameError">請輸入電子郵件或使用者名稱</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="error-msg" id="passwordError">請輸入密碼</span>
+                </div>
+
+                <button type="submit" class="btn-submit">Log in</button>
+            </form>
+
+            <div class="form-footer">
+                <a href="#" class="forgot-link">Forgot password?</a>
+                <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
